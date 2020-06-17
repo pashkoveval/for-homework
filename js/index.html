@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <script>
         'use strict'
 
+        let tc = prompt('Введите температуру к цельсиях');
+        let tf = (9 / 5) * tc + 32;
+        alert(tf);
+
+        let admin = "Василий";
+        let name = admin;
+        console.log(name);
+
+        
+        // сложение + конкатенация
+        // 1.  10 складываем с 10 получаем 20
+        // 2.  20 + строчное значение "10" = конкатенация
+        console.log( 10 + 10 + "10");
+
+        // полная конкатенация поскольку нет возможности сложить числовые значения
+        console.log(10 + "10" + 10);
+
+        // полное сложение поскольку (++)приводит строчные значения к числовым и сложение возможно
+        console.log(10 + 10 + +"10");
+
+        // отрецательная бесконечность
+        console.log(10 / -"");
+
+        // не понял честно((((
+        console.log(10 / +"2,5");
+
+        
+
         
 
 
+
     </script>
-    
+
 </body>
+
 </html>
