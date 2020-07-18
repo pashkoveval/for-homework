@@ -66,3 +66,7 @@ p {
 .by-btn:focus {
     outline: none;
 }
+
+img {
+    max-width: 200px;
+}

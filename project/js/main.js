@@ -8,7 +8,7 @@ const products = [
     { id: 4, title: 'Gamepad', price: 4500, img: 'img/gamepad.jpg' },
 ];
 
-const renderProduct = (title, price, img="http://placehold.it/300x200.png") => {
+const renderProduct = (title, price, img="") => {
     return `<div class="product-item">
                 <h3>${title}</h3>
                 <img src="${img}" alt="" class="img">
@@ -18,7 +18,7 @@ const renderProduct = (title, price, img="http://placehold.it/300x200.png") => {
 };
 
 const renderProducts = list => {
-    const productList = list.map(item => renderProduct(item.title, item.price));
+    const productList = list.map(item => renderProduct(item.title, item.price, item.img));
     console.log(productList);
     // убераем запятую через .join(' ')
     document.querySelector('.products').innerHTML = productList.join(' ');
