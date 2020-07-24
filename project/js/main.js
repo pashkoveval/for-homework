@@ -19,7 +19,6 @@ const renderProduct = (title, price, img="") => {
 
 const renderProducts = list => {
     const productList = list.map(item => renderProduct(item.title, item.price, item.img));
-    console.log(productList);
     // убераем запятую через .join(' ')
     document.querySelector('.products').innerHTML = productList.join(' ');
 };
